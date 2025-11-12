@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduccion a los Formularios</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario para ingresar datos de una persona</h1>
+        </header>
+            <form action="server.html" method="get">
+                <label for="apellidos">INGRESE SU APELLIDO</label>
+                <input
+                type="text"
+                name="apellidos"
+                id="apellidos"
+                placeholder="Molina"
+                maxlength="5"
+                minlength="3"
+                >
+
+                <label for="nombres">INGRESE SU NOMBRE</label>
+                <input
+                type="text"
+                name="nombres"
+                id="nombres"
+                placeholder="Gabriel"
+                maxlength="5"
+                minlength="3"
+                >
+
+                <label for="edad">INGRESE SU EDAD</label>
+                <input
+                type="number"
+                name="edad"
+                id="edad"
+                min="5"
+                max="75"
+                placeholder="23"
+                >
+
+                <label for="email">INGRESE SU CORREO</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="gamolina3@espe.edu.ec"
+                >
+                <!-- date -->
+
+                <label for="fecha">Ingrese su fecha de nacimiento</label>
+                <input 
+                    type="date" 
+                    for="date" 
+                    name="fecha_nacimiento" 
+                    id="fecha" 
+                    placeholder="dd/mm/aaaa"
+                    value="2025-10-22"
+                    min="2025-09-18"
+                    max="2025-10-22"    
+                >ingrese su fecha de nacimiento</input>
+                
+                <!-- Radio -->
+                <label for="">Selecione su sexo</label>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" id="hombre" value="HOMBRE">HOMBRE</input checked>
+                <label for="femenino">Femenino</label>
+                <input type="radio" name="sexo" id="mujer" value="MUJER">MUJER</input checked>
+            
+                <!-- checkbox -->
+                <label for="">Selecione su dias de clase de programaciON weB</label>
+                <label for="lunes">lunes</label>
+                <input type="checkbox" name="dia[]" id="lunes" value="LUNES">LUNES</input>
+                <label for="martes">martes</label>
+                <input type="checkbox" name="dia[]" id="martes" value="MARTES">MARTES</input>
+                <label for="miercoles">miercoles</label>
+                <input type="checkbox" name="dia[]" id="miercoles" value="MIERCOLES">MIERCOLES</input>
+                <label for="jueves">jueves</label>
+                <input type="checkbox" name="dia[]" id="jueves" value="JUEVES">JUEVES</input>
+                <label for="viernes">viernes</label>
+                <input type="checkbox" name="dia[]" id="viernes" value="VIERNES">VIERNES</input>
+        
+                <!-- input -->
+                <label for="foto">suba su foto</label>
+                <input 
+                    type="file" name="foto" id="foto"
+                    accept="aplication/pdf"
+                >
+
+                <!-- color -->
+                <label for="color">Seleccione su color favorito</label>
+                <input 
+                    type="color" 
+                    name="color_favorito" 
+                    id="color" 
+                    value="#000000"
+                >
+
+                <!-- rangue -->
+                <label for="rango">Seleccione su estatura</label>
+                <input 
+                    type="range" 
+                    name="estatura" 
+                    id="rango" 
+                    min="100" 
+                    max="200" 
+                    value="125"
+                >
+                <!-- search -->
+                <label for="cedula">Buscar por cedula</label>
+                <input 
+                    type="search" 
+                    name="cedula" 
+                    id="cedula" 
+                    placeholder="1723456789"
+                >
+
+                <!-- reset -->
+                <label for="reset">Limpiar formulario</label>
+                <input 
+                    type="reset" 
+                    value="LIMPIAR DATOS" 
+                    id="reset"
+                >
+
+                <!-- hidden, password -->
+                <label for="usuario">Ingrese su contraseña</label>
+                <input 
+                    type="password" 
+                    name="usuario" 
+                    placeholder="***"
+                >
+
+                <!-- submit -->
+                <label for="submit">Enviar formulario</label>
+                <input 
+                    type="submit" 
+                    value="ENVIAR DATOS" 
+                    id="submit"
+                >
+
+            </form>
+        </main>
+        <footer>
+            <h1>Formularios</h1>
+        </footer>
+    </body>
+</html>
